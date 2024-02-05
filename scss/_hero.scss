@@ -11,7 +11,8 @@ main {
     margin: 220px auto;
     @include d-flex(space-between, center);
     .programming {
-      width: 390px;
+      max-width: 390px;
+      width: 100%;
     }
     h1 {
       width: 636px;
@@ -28,18 +29,21 @@ main {
     }
   }
 }
+
 @media (max-width: 500px) {
-  .text-wrapper {
-    flex-direction: column;
-    gap: 50px;
-    .programming {
-      width: 350px;
-    }
-    h1 {
-      width: 363px;
-      font-size: 44px;
-      height: 200px;
-      text-align: center;
+  main {
+    .text-wrapper {
+      flex-direction: column;
+      gap: 103px;
+      .programming {
+        width: 300px;
+      }
+      h1 {
+        width: 286px;
+        font-size: 37px;
+        height: 200px;
+        text-align: center;
+      }
     }
   }
 }

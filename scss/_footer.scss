@@ -1,0 +1,88 @@
+@mixin d-flex($justifycontent, $alignItems) {
+  display: flex;
+  justify-content: space-between;
+  justify-content: end;
+  align-items: center;
+}
+
+footer {
+  max-width: 1204px;
+  width: 100%;
+  min-height: 350px;
+  height: 100%;
+  margin: auto;
+  margin-top: 260px;
+  color: #a7a7a7;
+  .footer-desc {
+    @include d-flex(end, start);
+    column-gap: 48px;
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    .links-btn {
+      display: flex;
+      column-gap: 20px;
+      transition: 0.5s;
+      img {
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+  }
+  .border {
+    max-width: 1209px;
+    width: 100%;
+    border: 2px solid #42446e;
+    min-height: 5px;
+    height: 100%;
+    opacity: 30%;
+    margin-top: 103px;
+  }
+  .footer-nav {
+    .nav-list {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 52px;
+      margin-top: 103px;
+      transform: 1s;
+      a {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #a7a7a7;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    padding: 20px 0px;
+  }
+  .footer-nav .nav-list {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 50px;
+  }
+  .footer-desc {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

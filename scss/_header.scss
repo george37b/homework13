@@ -21,6 +21,10 @@ header {
       letter-spacing: 0px;
       text-align: center;
       color: #a7a7a7;
+      transform: 1s;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
   .logotype {
@@ -30,6 +34,12 @@ header {
   .links-btn {
     display: flex;
     column-gap: 20px;
+    transform: 0.5s;
+    img {
+      &:hover {
+        scale: 1.2;
+      }
+    }
   }
   .burger-menu {
     display: none;

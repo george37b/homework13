@@ -1,0 +1,49 @@
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 49px;
+    color: #cccccc;
+    margin-top: 250px;
+  }
+  .Tech {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #a7a7a7;
+    width: 719px;
+  }
+  .skills {
+    max-width: 1204px;
+    width: 100%;
+    margin-top: 140px;
+    column-gap: 103px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .skills-section {
+    h2 {
+      font-size: 36px;
+    }
+    .Tech {
+      font-size: 27px;
+      width: 300px;
+    }
+    .skills {
+      flex-direction: column;
+      width: 150px;
+      gap: 103px;
+    }
+  }
+}
